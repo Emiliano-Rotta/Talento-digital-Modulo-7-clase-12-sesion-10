@@ -1,0 +1,10 @@
+
+{
+  "development": {
+    "username": "postgres",
+    "password": "cirkuit32",
+    "database": "deportes_chile",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
