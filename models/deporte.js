@@ -8,6 +8,7 @@ module.exports = (sequelize, DataTypes) => {
       Deporte.hasMany(models.Evento, { 
           foreignKey: 'deporteId', 
           onDelete: 'CASCADE', // Borrado en cascada
+          hooks: true // Necesario para que Sequelize aplique el borrado en cascada
       });
   };
 

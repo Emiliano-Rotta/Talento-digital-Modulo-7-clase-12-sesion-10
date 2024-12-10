@@ -8,7 +8,10 @@ module.exports = (sequelize, DataTypes) => {
 
   // Relación con Deporte
   Evento.associate = function (models) {
-      Evento.belongsTo(models.Deporte, { foreignKey: 'deporteId' });
+      Evento.belongsTo(models.Deporte, { 
+        foreignKey: 'deporteId', 
+        onDelete: 'CASCADE' 
+    });
   };
 
   return Evento;

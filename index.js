@@ -48,11 +48,11 @@
 
 //realizar las siguientes consultas
 
-// const { crearDeporte, crearEvento, obtenerDeportesConEventos, eliminarDeporte } = require('./controllers/deportesController');
+const { crearDeporte, crearEvento, obtenerDeportesConEventos, eliminarDeporte } = require('./controllers/deportesController');
 
-// const main = async () => {
-//     try {
-        // Crear deportes
+const main = async () => {
+    try {
+        // // Crear deportes
         // const futbol = await crearDeporte('Fútbol');
         // const tenis = await crearDeporte('Tenis');
 
@@ -65,15 +65,15 @@
         // console.log('Deportes con eventos:', JSON.stringify(deportes, null, 2));
 
         // Eliminar un deporte y verificar cascada
-//         await eliminarDeporte(2);
-//         const deportesPostEliminacion = await obtenerDeportesConEventos();
-//         console.log('Deportes después de eliminación:', JSON.stringify(deportesPostEliminacion, null, 2));
-//     } catch (error) {
-//         console.error('Error:', error);
-//     }
-// }
+        await eliminarDeporte(5);
+        const deportesPostEliminacion = await obtenerDeportesConEventos();
+        console.log('Deportes después de eliminación:', JSON.stringify(deportesPostEliminacion, null, 2));
+    } catch (error) {
+        console.error('Error:', error);
+    }
+}
 
-// main();
+main();
 
 
 //Luego correr node index.js
