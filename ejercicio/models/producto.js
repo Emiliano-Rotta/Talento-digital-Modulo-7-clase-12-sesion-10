@@ -14,7 +14,11 @@ const Producto = sequelize.define('Producto', {
 });
 
 // Relación
-Categoria.hasMany(Producto, { onDelete: 'CASCADE' });
+Categoria.hasMany(Producto, { 
+  foreignKey: 'deporteId', 
+  onDelete: 'CASCADE', // Borrado en cascada
+  hooks: true // Necesario para que Sequelize aplique el borrado en cascada
+});
 Producto.belongsTo(Categoria);
 
 module.exports = Producto;

@@ -9,6 +9,7 @@
 // npm init -y
 // npm install sequelize sequelize-cli pg pg-hstore
 // npx sequelize-cli init
+// modificar los datos de config/config.json
 // npx sequelize-cli db:create
 // npx sequelize-cli model:generate --name Categoria --attributes nombre:string
 // npx sequelize-cli model:generate --name Producto --attributes nombre:string,precio:decimal
